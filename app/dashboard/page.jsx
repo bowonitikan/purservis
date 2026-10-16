@@ -142,6 +142,28 @@ export default function Dashboard() {
         </div>
         
         <div className="flex items-center gap-3 pr-1">
+		   {/* Tombol Panduan / Help */}
+<div className="relative group">
+  <a 
+    href="/User Guide.html" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center justify-center w-10 h-10 bg-white/80 rounded-xl shadow-[4px_4px_10px_rgba(209,217,230,0.5),-4px_-4px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_4px_4px_10px_rgba(209,217,230,0.5),inset_-4px_-4px_10px_rgba(255,255,255,0.8)] transition-all duration-300 text-purple-600 cursor-pointer"
+  >
+    {/* Ikon Tanda Tanya (?) */}
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+    </svg>
+  </a>
+
+  {/* Balon Petunjuk (Tooltip) yang muncul saat di-hover */}
+  <div className="absolute right-0 top-12 hidden group-hover:block w-max bg-[#4C3D5A] text-white text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg z-50 animate-fade-in">
+    Buka Buku Panduan
+    {/* Segitiga kecil panah ke atas pada balon */}
+    <div className="absolute -top-1 right-3.5 w-2.5 h-2.5 bg-[#4C3D5A] rotate-45"></div>
+  </div>
+</div>
+		
           {/* Tombol Setup */}
           <button 
             onClick={() => setIsSetupOpen(true)}
