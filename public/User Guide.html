@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Penggunaan Poer Electro Servis</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #4C3D5A;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #F5EEFB;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 32px;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+        }
+        h1 { color: #4C3D5A; margin-bottom: 5px; font-weight: 800; }
+        h2 { 
+            color: #8B5CF6; 
+            border-bottom: 2px dashed #EAE0F5; 
+            padding-bottom: 10px; 
+            margin-top: 40px; 
+            font-weight: 800;
+        }
+        h3 { color: #4C3D5A; margin-top: 25px; display: flex; align-items: center; gap: 8px; }
+        a { color: #8B5CF6; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        
+        .step-box {
+            background-color: #FAFAFA;
+            border-left: 5px solid #8B5CF6;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 16px 16px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .step-box-admin {
+            border-left: 5px solid #F59E0B;
+            background-color: #FFFBEB;
+        }
+        .step-box-nota {
+            border-left: 5px solid #10B981;
+            background-color: #F0FDF4;
+        }
+        
+        .highlight { background-color: #D1FAE5; color: #059669; padding: 2px 8px; border-radius: 8px; font-size: 0.85em; font-weight: bold; }
+        .highlight-status { background-color: #E0E7FF; color: #4338CA; padding: 2px 8px; border-radius: 8px; font-size: 0.85em; font-weight: bold; }
+        .highlight-admin { background-color: #FEF3C7; color: #B45309; padding: 2px 8px; border-radius: 8px; font-size: 0.85em; font-weight: bold; }
+        .highlight-nota { background-color: #D1FAE5; color: #065F46; padding: 2px 8px; border-radius: 8px; font-size: 0.85em; font-weight: bold; }
+        
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .text-center { text-align: center; }
+        
+        .admin-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+            margin: 20px auto;
+            border: 4px solid #F5EEFB;
+        }
+        
+        .image-portrait {
+            max-width: 380px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <div class="text-center">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihP2EbYNmNB1vmNlvLysEXdLM7VrHkxWCEGmFl5XQGuoRcIq1p2uvtXnAJzzoosXfw3vH48JExdbGlQIdyjPT7HZcLw0TTkn3xT0Q1YKiT1QNbahFgRFkaCtGSB5IVr3niUa-ivOvEW4x82lVGJcw8uzRHMkWQDkE8_NTL_aRnTu9LtCkwHGH9Rr2-6fka/s225/purwanto.jpg" width="130" style="border-radius: 30px; box-shadow: 0 8px 16px rgba(139, 92, 246, 0.2); margin-bottom: 20px;" alt="Logo Poer Electro">
+            
+            <h1>🛠️ Poer Electro Servis</h1>
+            <p style="font-size: 1.1em; color: #6B7280; margin-top: 0;"><b>Buku Panduan Penggunaan Sistem Manajemen Servis</b></p>
+        </div>
+
+        <!-- Fitur Unggulan -->
+        <div class="text-center" style="margin: 30px 0; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <span style="background: #EAE0F5; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✅ Self-Service</span>
+            <span style="background: #EAE0F5; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✅ Live Tracking</span>
+            <span style="background: #EAE0F5; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✅ Auto WhatsApp</span>
+            <span style="background: #EAE0F5; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✅ Cetak Nota</span>
+        </div>
+
+        <p>Selamat datang di sistem manajemen servis masa depan! Aplikasi ini dirancang khusus untuk mempermudah Anda dalam mencatat, melacak, dan memberi informasi kepada pelanggan secara otomatis.</p>
+
+        <!-- PANDUAN PELANGGAN -->
+        <h2>📱 Bagian 1: Panduan Untuk Pelanggan</h2>
+        <p>Aplikasi ini sangat memanjakan pelanggan. Mereka tidak perlu lagi antre panjang atau terus-menerus bertanya lewat WA tentang status perbaikan HP mereka.</p>
+
+        <h3>📝 1. Pendaftaran Servis Mandiri (Self-Service)</h3>
+        <div class="step-box">
+            Pelanggan yang datang ke toko (atau dari rumah) cukup membuka website Anda, lalu:
+            <ol>
+                <li>Klik menu utama berwarna ungu <b>"Daftar Service"</b>.</li>
+                <li>Isi form singkat: Nama, No. WhatsApp, Merek/Tipe HP, dan Keluhan kerusakannya.</li>
+                <li>Setelah klik "Daftar", layar akan langsung memunculkan <span class="highlight">ID Servis</span>.</li>
+                <li>Pelanggan cukup menyerahkan HP ke kasir sambil menyebutkan ID tersebut. Selesai!</li>
+            </ol>
+        </div>
+
+        <h3>🔍 2. Melacak Status Perbaikan Real-Time</h3>
+        <div class="step-box">
+            Untuk mengetahui apakah perangkat sudah selesai diperbaiki, pelanggan cukup:
+            <ol>
+                <li>Buka website dan klik menu <b>"Lacak Servis"</b>.</li>
+                <li>Masukkan <b>ID Servis</b> yang mereka dapatkan saat mendaftar.</li>
+                <li>Layar akan menampilkan status terkini perangkat mereka.</li>
+            </ol>
+        </div>
+
+        <!-- PANDUAN ADMIN -->
+        <h2>💻 Bagian 2: Panduan Untuk Admin / Teknisi</h2>
+        <p>Ini adalah area dapur Anda. Di sini Anda mengatur semua pekerjaan, mencatat biaya, dan mencetak nota. Semua data pendaftaran pelanggan akan otomatis masuk ke sini.</p>
+
+        <h3>🔐 1. Cara Masuk (Login)</h3>
+        <div class="step-box step-box-admin">
+            <ol>
+                <li>Di halaman utama pelanggan, gulir ke paling bawah.</li>
+                <li>Klik tombol kecil bertuliskan <b>"🔐 Admin Portal"</b>.</li>
+                <li>Masukkan kata sandi rahasia toko Anda untuk masuk ke Dashboard Pusat.</li>
+            </ol>
+        </div>
+
+        <h3>🖥️ 2. Pengenalan Layar Dashboard Admin</h3>
+        <div class="step-box step-box-admin">
+            <p>Setelah berhasil masuk, Anda akan melihat layar <b>Daftar Antrean</b> lengkap dengan berbagai petunjuk tombol seperti gambar di bawah ini:</p>
+            
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEHM7VMM1tceO5ACgLLnm8IDgaOq3XQyViq87CG0-BwliyIwoB_WixWupxr4kdpHhV4tUgrArUp-6wtCvCepYitiT1_yU8ryeqkzhIYwCztgpZls2ITuSafr1twwbat2Oe-PRwH_bPUzFB9g2wLAiB2RZsFBwXbTjbyqKjAZ2gWIPVJuZbR7Q1o9Lwgpkg/s2334/layaradmin.jpg" alt="Petunjuk Layar Admin Poer Electro" class="admin-image">
+
+            <p>Berikut adalah penjelasan fungsi-fungsi yang ada di layar berdasarkan gambar petunjuk di atas:</p>
+            <ul>
+                <li><b>Pengaturan Aplikasi (Ikon Gir ⚙️):</b> Digunakan untuk mengakses setelan profil dan konfigurasi sistem admin.</li>
+                <li><b>Keluar (Ikon Pintu 🚪):</b> Untuk logout dengan aman dari panel admin agar data Anda tetap terlindungi.</li>
+                <li><b>Tombol ➕ Baru:</b> Digunakan untuk menambahkan tiket servis baru secara manual apabila pelanggan mendaftar langsung lewat Anda (offline).</li>
+                <li><b>Tombol Laporan 📊:</b> Membuka ringkasan, riwayat, dan statistik keuangan atau pengerjaan seluruh servis yang sudah selesai.</li>
+                <li><b>Kolom Cari 🔍:</b> Membantu Anda menemukan data dengan cepat cukup dengan mengetikkan ID Servis, Nama Pelanggan, atau Nomor WA.</li>
+                <li><b>Filter Status:</b> Memudahkan Anda menyaring daftar agar hanya menampilkan perangkat berdasarkan proses yang sedang berjalan (Semua, Antrean, Dikerjakan, Selesai).</li>
+            </ul>
+        </div>
+
+        <h3>📋 3. Membaca Kartu Tiket Servis</h3>
+        <div class="step-box step-box-admin">
+            <p>Setiap perangkat pelanggan ditampilkan dalam bentuk kotak (kartu) yang memuat informasi ringkas namun lengkap. Berikut adalah panduan membaca informasi pada kartu servis:</p>
+
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja427Zxhr_7lu4wU3mAUpwvyKKMt1U9jZi2mphAgYLhO1JbmiKEorhefnLpkb5rGmxdVR6ArOSq1Wa-RkPH2yU1RcvuNNUTlAAvCrf6Iy9-vF9755IzHcKlMeNvhGJ7__KedXIT9tTJZhlWANEqhnSxr2mLH03HwGZjPDKAPDsRQnd7QkDo6PTEVtVqVdH/s2752/card%20service%20ok.jpg" alt="Petunjuk Kartu Servis" class="admin-image">
+
+            <ul>
+                <li><b>Kode Tiket:</b> Nomor identitas unik untuk servis ini (contoh: <span class="highlight-admin">SRV-823380</span>).</li>
+                <li><b>Status Saat Ini:</b> Posisi proses perbaikan saat ini (Antrean, Dikerjakan, Selesai, Diambil).</li>
+                <li><b>Tipe Perangkat:</b> Merek dan tipe laptop/HP yang sedang diservis.</li>
+                <li><b>Keluhan Pelanggan:</b> Detail kerusakan atau keluhan yang dialami perangkat.</li>
+                <li><b>Nama Pelanggan:</b> Nama pemilik perangkat yang terdaftar.</li>
+                <li><b>No. WhatsApp:</b> Kontak pelanggan untuk pengiriman notifikasi atau WA.</li>
+                <li><b>Tombol Aksi (Ikon Roket 🚀):</b> Klik untuk mengubah status, mengisi rincian biaya, atau mencetak nota!</li>
+            </ul>
+        </div>
+
+        <h3>✏️ 4. Update Status & Rincian Biaya</h3>
+        <div class="step-box step-box-admin">
+            <p>Setelah mengeklik tombol <b>Ikon Roket 🚀</b> pada kartu pelanggan, akan muncul jendela pop-up untuk memperbarui status pekerjaan dan memasukkan rincian tagihan:</p>
+
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq1M5xbPIEpOqYgaWmdEZhBoUEnvs-YCgBjTEjDRCkvyf02daw-HVoTxKX-uVCTXP3OR7j0kAfaUtVTMZfk7NYDEn8w2xH4IxmHxUC1vtBvEH22lyxJYQWRc0bPHWMCfgp0hPwC-xCmR2pb07l2BM8yoUFOI7LZ-PLMuxp4iirfK0g1HJoMOmT1_WNR6Nr/s541/update%20biaya.JPG" alt="Petunjuk Update Biaya" class="admin-image image-portrait">
+
+            <p>Berikut adalah penjelasan lengkap fitur di dalam layar <b>Update Status & Biaya</b>:</p>
+            <ul>
+                <li><b>Kode Tiket:</b> Nomor identitas unik untuk servis ini.</li>
+                <li><b>Status Pengerjaan:</b> Klik kolom ini untuk mengubah progres servis pelanggan (pilih: Antrean, Sedang Dikerjakan, Selesai, atau Diambil).</li>
+                <li><b>+ Tambah Rincian:</b> Klik tombol teks ini untuk menambahkan baris kosong baru apabila ada beberapa suku cadang yang diganti sekaligus.</li>
+                <li><b>Jasa & Sparepart:</b> Tulis nama perbaikan/suku cadang beserta biayanya di sini.</li>
+                <li><b>Hapus Baris (Tanda Silang ❌):</b> Klik tombol silang merah untuk menghapus baris rincian ini.</li>
+                <li><b>Total Otomatis:</b> Jumlah biaya akan terhitung otomatis dari seluruh rincian di atas.</li>
+                <li><b>Hapus Tiket (Ikon Tong Sampah 🗑️):</b> Klik untuk menghapus seluruh data servis ini.</li>
+                <li><b>Batal / Simpan:</b> Klik 'Simpan' untuk memperbarui data, atau 'Batal' untuk kembali.</li>
+            </ul>
+        </div>
+        
+        <h3>💬 5. Integrasi WhatsApp (Notifikasi Otomatis)</h3>
+        <div class="step-box step-box-admin">
+            <p>Setelah perangkat diperbaiki, Anda bisa mengabari pelanggan tanpa perlu mengetik manual:</p>
+            <ol>
+                <li>Ubah <b>Status Pengerjaan</b> menjadi <b>Selesai</b> melalui form di atas, lalu klik <b>Simpan</b>.</li>
+                <li>Pada kartu pelanggan di halaman depan, akan muncul ikon <b>WhatsApp (Warna Hijau)</b>.</li>
+                <li>Klik ikon tersebut. Sistem akan otomatis membuka WhatsApp web/aplikasi dengan pesan tagihan yang sudah terketik rapi. Anda tinggal klik kirim!</li>
+            </ol>
+        </div>
+
+
+        <!-- BAGIAN 3: PANDUAN NOTA -->
+        <h2>🧾 Bagian 3: Panduan Cetak Nota & Transaksi</h2>
+        <p>Gunakan bagian ini untuk mendokumentasikan tata cara cetak nota dan penyelesaian transaksi keuangan pelanggan Anda.</p>
+
+        <h3>🖨️ 1. Mencetak Nota Resmi (Struk)</h3>
+        <div class="step-box step-box-nota">
+            Saat pelanggan datang untuk mengambil perangkat dan melakukan pembayaran:
+            <ol>
+                <li>Ubah status pengerjaan di sistem menjadi <span class="highlight-nota">Diambil</span>.</li>
+                <li>Akan muncul <b>Ikon Printer 🖨️</b> di sebelah data pelanggan tersebut.</li>
+                <li>Klik ikon Printer untuk membuka halaman pratinjau nota (invoice) cantik berlogo <b>Poer Electro Servis</b>.</li>
+                <li>Tekan tombol cetak di komputer/HP Anda (atau <code>Ctrl + P</code>) untuk menghubungkannya ke printer struk atau menyimpannya sebagai file PDF.</li>
+                <li>Berikan cetakan nota fisik tersebut bersama perangkat kepada pelanggan sebagai bukti garansi/pembayaran resmi.</li>
+            </ol>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center" style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #EAE0F5;">
+            <p style="color: #9CA3AF; font-size: 0.9em; margin-bottom: 5px;">Didesain dengan ❤️ oleh <b>qaSoft</b> | <a href="mailto:aqiladewiri@gmail.com" style="color: #9CA3AF;">Hubungi Developer</a></p>
+            <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=14&pause=1000&color=8B5CF6&center=true&vCenter=true&width=435&lines=Pelayanan+Cepat;Transparan+dan+Terpercaya;Poer+Electro+Servis+Siap+Melayani!" alt="Typing Animasi" style="max-width: 100%;">
+        </div>
+
+    </div>
+
+</body>
+</html>
