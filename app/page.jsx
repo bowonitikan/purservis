@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const storeWhatsApp = "6287881545501"; // Ganti dengan nomor WA Anda
-  const waMessage = encodeURIComponent("Halo Eranitikan Servis, saya ingin konsultasi mengenai perbaikan perangkat saya.");
+  const waMessage = encodeURIComponent("Halo Poer Servis, saya ingin konsultasi mengenai perbaikan perangkat saya.");
 
   return (
     <div className="min-h-screen bg-[#F5EEFB] flex flex-col items-center justify-center p-4 font-sans relative overflow-hidden">
